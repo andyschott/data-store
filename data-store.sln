@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data-store", "data-store\data-store.csproj", "{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
