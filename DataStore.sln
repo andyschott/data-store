@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore", "DataStore\DataStore.csproj", "{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore.MongoDb", "DataStore.MongoDb\DataStore.MongoDb.csproj", "{722B0FEE-B452-415F-9CA9-78001A4E645F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ABCFDA3-92AF-48D5-8C41-09B12BCBF0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722B0FEE-B452-415F-9CA9-78001A4E645F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722B0FEE-B452-415F-9CA9-78001A4E645F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722B0FEE-B452-415F-9CA9-78001A4E645F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722B0FEE-B452-415F-9CA9-78001A4E645F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

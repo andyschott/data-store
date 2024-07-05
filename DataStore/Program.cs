@@ -1,9 +1,29 @@
+using data_store;
+using DataStore.MongoDb;
+using Microsoft.AspNetCore.Cors.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+const string CorsPolicyName = "CorsPolicy";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(CorsPolicyName,
+        policy => policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
+var mongoDbConfig = builder.Configuration.GetSection("MongoDb")
+    .Get<MongoDbConfig>()
+    ?? new MongoDbConfig();
+builder.Services.AddMongoDb(mongoDbConfig);
+
 var app = builder.Build();
+
+app.UseMiddleware<LoggingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -17,6 +37,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseCors(CorsPolicyName);
 app.UseAuthorization();
 
 app.MapControllerRoute(
