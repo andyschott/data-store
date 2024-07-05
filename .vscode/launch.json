@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/data-store/bin/Debug/net8.0/data-store.dll",
+            "program": "${workspaceFolder}/DataStore/bin/Debug/net8.0/DataStore.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
